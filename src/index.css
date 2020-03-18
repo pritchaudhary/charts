@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/*  */
+/*to display label inside bar */
+.c3-text {
+  transform: translateX(-25px);
+  fill: #000 !important;
+  font:bold;
+}
+
+.rowC{display:flex; flex-direction:row;}
+.heatmap-bar .c3-axis-y2 .tick { 
+  opacity: 0 !important;
+ }
+ .c3-circle._expanded_ {opacity: 1 !important;}
+
+
+
+input {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  width: 300px;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+}
+
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(300px + 1rem);
+}
+
+.suggestions li {
+  padding: 0.5rem;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #008f68;
+  color: #fae042;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
+
+.spacer {
+  font-size: 40px;
+  line-height: 200px;
+  text-align: center;
+  color: #ccc;
+}
+
+.spacer:before {
+  content: '▼';
+}
+
+.waypoint-line {
+  border-top: 1px dashed red;
+}
+
+.message {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #999;
+  opacity: 0.5;
+  color: #fff;
+  padding: 10px;
+}
+
+.infinite-scroll-example__scrollable-parent {
+  height: 500px;
+  overflow-y: scroll;
+  position: relative;
+}

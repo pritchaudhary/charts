@@ -1,10 +1,14 @@
 import React from "react";
 import "./App.css";
-import UploadModal from "./UploadModal";
+// import UploadModal from "./UploadModal";
+import WebCamUpload from "./WebCamUpload";
+import FileInputUpload from "./FileInputUpload";
 const Home = () => {
   return (
     <>
-      <UploadModal />
+      {/* <UploadModal />*/}
+      <WebCamUpload />
+      <FileInputUpload />
     </>
   );
 };
